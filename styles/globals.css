@@ -25,3 +25,14 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+.text-gradient {
+  background: linear-gradient(to right, #8379B2, #BFB6F6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.imageborder{
+  border-radius: 100;
+}
