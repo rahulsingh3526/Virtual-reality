@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-
+import styles from "globals/styles";
 const inter = Inter({ subsets: ["latin"] });
 import Image from "next/image";
 import Link from "next/link";
@@ -180,22 +180,22 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="flex flex-row justify-between p-4 m-4">
-            <div>
+          <div className="flex flex-row justify-between items-center p-4 m-4 ">
+            <div className=" space-y-2 w-[45%]">
               {" "}
-              <p className="font-bold text-white text-2xl">INTRODUCTION</p>
-              <div className="flex flex-row">
-                <p className="text-white">TO HYDRA VR </p>
+              <p className="font-bold text-white text-4xl">INTRODUCTION</p>
+              <div className="flex flex-row items-center space-x-10">
+                <p className="text-white text-3xl font-thin">TO HYDRA VR </p>
                 <Image
                   src="/arrow.png" // Replace with the path to your image
                   alt="Logo"
                   className="m-2"
-                  width={40}
-                  height={60}
+                  width={200}
+                  height={80}
                 />
               </div>
             </div>
-            <p className="text-xs text-white w-1/3">
+            <p className=" text-white w-[45%]">
               Vitae sapien pellentesque habitant morbi tristique senectus et
               netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
               lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
@@ -204,20 +204,22 @@ export default function Home() {
               vitae.
             </p>
           </div>
-          <div className="flex flex-col md:flex-row justify-between">
-            <div>
+          <div className="flex flex-col md:flex-row justify-between items-center ">
+            <div className="w-[45%]">
               <Image
                 src="/mask group.png" // Replace with the path to your image
                 alt="Logo"
                 className="m-2"
-                width={400}
-                height={600}
+                width={524}
+                height={557}
               />
             </div>{" "}
-            <div className="w-1/3">
-              <p className="font-bold text-white text-2xl">ABOUT</p>
-              <p className="text-white font-thin">TO HYDRA VR </p>{" "}
-              <p className="text-xs text-white">
+            <div className="w-[45%] space-y-5">
+              <p className="font-bold text-white text-4xl">ABOUT</p>
+              <p className="text-white text-3xl font-thin ">
+                TO HYDRA VR{" "}
+              </p>{" "}
+              <p className=" text-white">
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
                 mattis rhoncus urna neque viverra justo. Vivamus at augue eget
                 arcu dictum. Ultrices gravida dictum fusce ut placerat orci.
@@ -230,11 +232,201 @@ export default function Home() {
                 nisl suscipit adipiscing bibendum. Leo a diam sollicitudi n
                 tempor.
               </p>
-              <button>Let's get in touch</button>
+              <button className="bg-gradient-to-r from-[#8379B2] to-[#BFB6F6] text-xs font-semibold py-2 px-4 rounded-full">
+                Let s get in touch
+              </button>
+            </div>
+          </div>
+          {/* below the second image  */}
+          <div className="flex flex-row justify-between items-center p-4 m-4 ">
+            <div className=" space-y-2 w-[45%]">
+              {" "}
+              <p className="font-bold text-white text-4xl">WHY BUILD </p>
+              <div className="flex flex-row items-center space-x-10">
+                <p className="text-white text-3xl font-thin">WITH HYDRA </p>
+                <Image
+                  src="/arrow.png" // Replace with the path to your image
+                  alt="Logo"
+                  className="m-2"
+                  width={200}
+                  height={80}
+                />
+              </div>
+            </div>
+            <p className=" text-white w-[45%]">
+              Vitae sapien pellentesque habitant morbi tristique senectus et
+              netus et. Feugiat nibh sed pulvinar proin gravida hendrerit
+              lectus. Mi sit amet mauris commodo quis imperdiet massa tincidunt
+              nunc. Viverra aliquet eget sit amet tellus. Ornare lectus sit amet
+              est placerat in. Lectus magna fringilla urna porttitor rhoncus
+              vitae.
+            </p>
+          </div>
+
+          {/* cards components    */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className=" p-2 overflow-hidden m-2">
+              <div>
+                <div className="relative z-10">
+                  <Image
+                    src="/Mask group (1).png" // Replace with the path to your image
+                    alt="Logo"
+                    className="-z-10  absolute m-8 border-8 rounded-full border-[#B0B0B0] border-opacity-30"
+                    width={190}
+                    height={190}
+                  />
+                  <Image
+                    src="/Rectangle 11.png" // Replace with the path to your image
+                    alt="Logo"
+                    className=" absolute m-8 "
+                    width={250}
+                    height={511}
+                  />
+                </div>
+              </div>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">htyhg</div>
+                <div className="text-gray-700 text-base">dasfvc</div>
+              </div>
+              <div className="px-6 py-4">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  Learn More
+                </button>
+              </div>
+            </div>
+
+            <div className=" bg-[#281D2D] bg-gradient-radial relative rounded-lg shadow-lg overflow-hidden m-2">
+              <div className="">
+                <Image
+                  src="/Mask group (2).png" // Replace with the path to your image
+                  alt="Logo"
+                  className="m-8 p-4 border-8 rounded-full border-[#B0B0B0] border-opacity-50"
+                  layout="responsive"
+                  width={200}
+                  height={80}
+                />
+              </div>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">htyhg</div>
+                <div className="text-gray-700 text-base">dasfvc</div>
+              </div>
+              <div className="px-6 py-4">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden m-2">
+              <div className="relative">
+                <Image
+                  src="/arrow.png" // Replace with the path to your image
+                  alt="Logo"
+                  className="m-8 border-8 rounded-full border-[#B0B0B0] border-opacity-50"
+                  width={200}
+                  height={80}
+                />
+              </div>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">htyhg</div>
+                <div className="text-gray-700 text-base">dasfvc</div>
+              </div>
+              <div className="px-6 py-4">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  Learn More
+                </button>
+              </div>
+            </div>
+            <div className="max-w-sm bg-white rounded-lg shadow-lg overflow-hidden m-2">
+              <div className="relative">
+                <Image
+                  src="/arrow.png" // Replace with the path to your image
+                  alt="Logo"
+                  className="m-8 border-8 rounded-full border-[#B0B0B0] border-opacity-50"
+                  width={200}
+                  height={80}
+                />
+              </div>
+              <div className="px-6 py-4">
+                <div className="font-bold text-xl mb-2">htyhg</div>
+                <div className="text-gray-700 text-base">dasfvc</div>
+              </div>
+              <div className="px-6 py-4">
+                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full">
+                  Learn More
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-row justify-center align-middle relative">
+            {" "}
+            <p className="font-bold text-white text-4xl absolute top-20">
+              TECHNOLOGIES & HARDWARE
+            </p>
+            <p className="text-white text-3xl font-thin absolute top-40">
+              USED BY HYDRA VR.{" "}
+            </p>
+            <Image
+              src="/Tech-Section (1).png" // Replace with the path to your image
+              alt="Logo"
+              className="m-8"
+              layout="responsive"
+              width={200}
+              height={80}
+            />
+          </div>
+          <div>
+            <Image
+              src="/Tech-Section (2).png" // Replace with the path to your image
+              alt="Logo"
+              className="m-8"
+              layout="responsive"
+              width={200}
+              height={80}
+            />
+          </div>
+
+          {/* footer  */}
+          <div className="flex flex-row justify-between">
+            <Image
+              src="/Frame.png" // Replace with the path to your image
+              alt="Logo"
+              className="m-8"
+              width={120}
+              height={120}
+            />
+            <div className="h-40 w-1 bg-gradient-to-b from-[#3F3349] via-[#B2A2D3] to-[#3F3349]"></div>
+            <div>
+              <p className="text-white ">ABOUT</p>
+              <p className="text-white ">SERVICES </p>
+              <p className="text-white ">TECHNOLOGIES</p>
+              <p className="text-white ">HOW TO</p>
+              <p className="text-white ">JOIN HYDRA</p>
+            </div>
+            <div className="h-40 w-1 bg-gradient-to-b from-[#3F3349] via-[#B2A2D3] to-[#3F3349]"></div>
+            <div>
+              <p className="text-white">ABOUT</p>
+              <p className="text-white">SERVICES </p>
+              <p className="text-white">TECHNOLOGIES</p>
+              <p className="text-white">HOW TO</p>
+              <p className="text-white">JOIN HYDRA</p>
+            </div>
+            <div className="h-40 w-1 bg-gradient-to-b from-[#3F3349] via-[#B2A2D3] to-[#3F3349]"></div>
+            <div>
+              <p className="text-white">SOCIALISE WITH HYDRA</p>
+              <Image
+                src="/Footer-Section.png" // Replace with the path to your image
+                alt="Logo"
+                className="my-8"
+                width={250}
+                height={40}
+              />
+              <button className="bg-gradient-to-r from-[#8379B2] to-[#BFB6F6] text-xs font-semibold py-2 px-4 rounded-full">
+                BUILD YOUR WORLD
+              </button>
             </div>
           </div>
         </div>
-        {/* next to hero componenets  */}
       </div>
     </>
   );
