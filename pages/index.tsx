@@ -1,5 +1,5 @@
 import { Inter } from "next/font/google";
-import styles from "globals/styles";
+// import styles from "globals/styles";
 const inter = Inter({ subsets: ["latin"] });
 import Image from "next/image";
 import Link from "next/link";
@@ -7,7 +7,7 @@ import { LuPhoneCall } from "react-icons/lu";
 import { FiMail } from "react-icons/fi";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { motion } from "framer-motion";
-import { container2, staggerContainer } from "./framer";
+import { container2 } from "./framer";
 import { TypingText } from "./Text";
 export default function Home() {
   return (
@@ -36,15 +36,9 @@ export default function Home() {
                   height={500}
                 /> */}
 
-                <motion.p
-                  variants={staggerContainer}
-                  initial="hidden"
-                  whileInView="show"
-                  viewport={{ once: false, amount: 0.5 }}
-                  className="font-semibold text-3xl text-gradient w-40 hidden md:block "
-                >
+                <p className="font-semibold text-3xl text-gradient w-40 hidden md:block ">
                   CHAIN CHRONICLES
-                </motion.p>
+                </p>
               </div>
 
               {/* Middle section with navigation links */}
@@ -197,7 +191,7 @@ export default function Home() {
                 viewport={{ once: false, amount: 0.5 }}
                 className="text-white text-3xl font-thin "
               >
-                <TypingText title="CHAIN CHRONICLES" textStyles="text-center" />
+                <TypingText title="CHAIN CHRONICLES" />
               </motion.p>{" "}
               <p className=" text-white text-xs lg:text-base">
                 Eget mi proin sed libero enim sed faucibus turpis. Nisl rhoncus
